@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input/>
+    <button>Inicio</button>
+    <script>
+
+        function verificar(){
+
+            if(parseInt(input.value) == secreto){
+                alert(input.value+" Es igual, Usted acerto");
+
+            }else{
+                alert("Usted erro");
+            }
+            input.value="";
+            input.focus();
+        }
+
+        var secreto = 5;
+        var input = document.querySelector("input");
+        var boton = document.querySelector("button");
+        boton.onclick = verificar;
+        input.focus();
+
+    </script>
+</body>
+</html>

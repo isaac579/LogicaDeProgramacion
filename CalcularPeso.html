@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    
+
+        //Funcones 
+        function saltarLinea(){
+            document.write("<br><br><br>");
+        }
+        
+        function  imprimir(nombre){
+            document.write(nombre);
+            saltarLinea();
+        }
+        
+        function calcularIMC(peso,altura){
+            
+          return  calIMC = peso / (altura * altura);
+
+        }
+
+        var nombre = prompt("Ingrese su nombre");
+        var peso = prompt(nombre+", Ingrese su peso");
+        var altura = prompt(nombre+", Ingrese su altura");
+
+        var IMC = (calcularIMC(peso,altura));
+
+        imprimir(nombre +", Su IMC es de"+ IMC);
+
+       if (IMC < 18.5) {
+
+            imprimir("Usted tiene insuficiencia ponderal, abajo de lo recomendado");
+
+       } else if( IMC >= 18.5 && IMC < 25){
+        
+            imprimir("Usted tiene intervalo normal");
+
+       }else if( IMC >=25 && IMC <= 29.9){
+
+            imprimir("Usted tiene sobrepeso");
+       
+        }else if(IMC>=30){
+        
+                imprimir("Usted tiene obecidad");
+        }else{
+
+            imprimir("Dato no corresponde a la tabla de la OMS");
+
+       }
+
+
+    </script>
+</body>
+</html>
