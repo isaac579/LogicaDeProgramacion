@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicacion</title>
+</head>
+<body>
+    <script>
+        function espacios(){
+        document.write("<br>");
+    }
+    function imprimir(leer){
+        document.write(leer);
+        espacios();
+    }
+
+
+   function calcMedia(){
+    var contador = 1;
+    var edad;
+    var totalEdades = 0;
+    while(contador <= numPerF){
+        
+        edad =  parseInt(prompt("Ingresa la edad de tu familiar"));
+        totalEdades = totalEdades + edad;
+        contador++;
+    }
+
+    imprimir(totalEdades/numPerF);
+   }
+    var numPerF = parseInt(prompt("Ingresa la cantidad de personas en tu familia"))
+    
+
+    
+
+    calcMedia();
+  
+        
+
+</script>
+</body>
+</html>

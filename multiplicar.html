@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicacion</title>
+</head>
+<body>
+    <script>
+        function espacios(){
+        document.write("<br>");
+    }
+    function imprimir(leer){
+        document.write(leer);
+        espacios();
+    }
+
+    function multiplicasion(){
+
+        while( contador <= 10){
+        
+        imprimir(numero +" X " +contador + " = "+ resultado);
+        contador++;
+        resultado = (numero * contador);
+
+   }
+    }
+
+    var numero = parseInt(prompt("Ingresa el año limite para el mundial"));
+    var contador = 1;
+    var resultado = numero;
+
+    multiplicasion();
+
+
+    
+  
+        
+
+</script>
+</body>
+</html>

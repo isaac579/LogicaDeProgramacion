@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            function espacios(){
+                document.write("<br>");
+            }
+            function imprimir(leer){
+                document.write(leer);
+                espacios();
+            }
+            function iniciarJuego(){
+
+                while(contador <= intentos){ 
+
+                numeroLanzado = parseInt(prompt("Ingresa el numero lanzado del 1-10"));
+                
+                if(numeroPensado == numeroLanzado){
+                    alert("Usted acerto en el numero lanzado: "+numeroLanzado+" / "+numeroPensado+" Usted acerto en el en el intento: "+ contador);
+                    break;
+                }else{
+                    alert("Usted eligio: "+numeroLanzado+" erro el numero pensado: " +numeroPensado+" Le quedan: "+(contador)+"/3");
+                }
+              
+                contador++;
+                }  
+            }
+
+            var numeroPensado = Math.round(Math.random()*10);
+            var numeroLanzado;
+            var intentos = 3;
+            var contador = 1;
+
+            iniciarJuego();
+    </script>
+</body>
+</html>
